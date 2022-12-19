@@ -4,6 +4,6 @@ RUN apk update && apk upgrade
 
 RUN apk add git vim neovim
 
-RUN git clone https://github.com/johnvanhienen/vim-102.git && rm -rf /vim-102/.git/
+RUN git clone https://github.com/johnvanhienen/vim-102.git && rm -rf /vim-102/.git && rm -rf /vim-102/.github
 
 WORKDIR /vim-102
